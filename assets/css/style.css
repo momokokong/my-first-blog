@@ -1,0 +1,124 @@
+:root {
+  --darkBG: #222222;
+  --darkText: #dee4e7;
+  --lightBG: #ffffff;
+  --lightText: #121212;
+
+}
+
+/* Reset some basics and set up some global attributes and prep the page display size */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1rem;
+  background-color: var(--lightBG);
+  color: var(--lightText);
+  font-family: "Roboto Slab", "Open Sans", 'Times New Roman';
+  font-size: 16px;
+}
+
+.light {
+  background-color: var(--lightBG);
+  color: var(--lightText);
+}
+
+.dark {
+  background-color: var(--darkBG);
+  color: var(--darkText);
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1vh solid var(--darkBG);
+  margin-bottom: 1vh;
+  padding: 10px;
+  width: 100vw;
+  height:fit-content;
+}
+
+h1 {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  margin-top: 1vh;
+  border-top: 1vh solid var(--darkBG);
+  width: 100vw;
+  min-height: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.avatar-page { 
+  width: 48vw;
+  margin-right: 1vw;
+  border-right: 1vw solid var(--darkBG);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-page {
+  width: 48vw;
+  margin-left: 1vw;
+  border-left: 1vw solid var(--darkBG);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 90%;
+  min-height: 25%;
+  margin: 1rem auto;
+  line-height: 1.5rem;
+}
+
+#submit {
+  background-color: var(--darkBG);
+  color: var(--darkText);
+}
+
+footer {
+  text-align: center;
+}
