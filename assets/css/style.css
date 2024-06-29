@@ -6,7 +6,7 @@
 
 }
 
-/* Reset some basics and set up some global attributes and prep the page display size */
+/* Reset some basics and set up some global attributes and prep the page/font display size */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,6 +18,10 @@
   font-size: 16px;
 }
 
+html {
+  height: 100vh;
+}
+
 .light {
   background-color: var(--lightBG);
   color: var(--lightText);
@@ -26,11 +30,6 @@
 .dark {
   background-color: var(--darkBG);
   color: var(--darkText);
-}
-
-
-html {
-  height: 100vh;
 }
 
 body {
@@ -75,7 +74,15 @@ nav button {
   width: 50px;
   height: 40px;
   background-image: url(../image/light-switch.jpg);
+}
+
+.moon {
   background-position: -30px 0;
+  transition: background-position 0.5s;
+}
+
+.sun {
+  background-position: 0 0;
   transition: background-position 0.5s;
 }
 
@@ -173,4 +180,6 @@ footer {
   margin-top: 3px;
   border-top: 6px solid var(--darkBG);
   text-align: center;
+  line-height: 1.5rem;
+  padding: 5px;
 }
