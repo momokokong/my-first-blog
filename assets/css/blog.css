@@ -1,0 +1,27 @@
+.blog-page {
+  border-bottom: 6px solid;
+  margin-bottom: 3px;
+  justify-content: center;
+}
+
+.post-card {
+  width: 95vw;
+  margin: 10px;
+  border: 1px solid;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-content {
+  flex-grow: 1;
+  margin: 15px;
+}
+
+footer {
+  margin-top: 3px;
+  border-top: 6px solid;
+  text-align: center;
+  line-height: 1.5rem;
+  padding: 5px;
+}

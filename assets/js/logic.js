@@ -5,18 +5,6 @@ const avatarImgEl = document.querySelector(".positive");
 const borderEl = document.querySelectorAll("header, main, .blog-page, .post-card, .avatar-page, .form-page, footer")
 let currentSwitch = "on";
 
-headerEl.addEventListener('click', function (event) {
-  const element = event.target;
-  if (element.matches(".light-switch")) {
-    if (currentSwitch === "on") {
-      turnOff();
-    } else {
-      turnOn();
-    }
-  } else if (element.matches("#back")) {
-    window.location.href = ("./index.html");
-  }
-});
 
 function init() {
   if (!(window.location.href.includes("blog.html"))) {
@@ -34,6 +22,19 @@ function init() {
     turnOff();  
   }
 }
+
+headerEl.addEventListener('click', function (event) {
+  const element = event.target;
+  if (element.matches(".light-switch")) {
+    if (currentSwitch === "on") {
+      turnOff();
+    } else {
+      turnOn();
+    }
+  } else if (element.matches("#back")) {
+    window.location.href = ("./index.html");
+  }
+});
 
 function turnOn() {
   let darkEl = document.querySelectorAll(".dark");

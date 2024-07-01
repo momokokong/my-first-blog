@@ -1,0 +1,58 @@
+.avatar-page { 
+  width: 48vw;
+  margin-right: 3px;
+  border-right: 6px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.positive {
+  filter: invert(0);
+  transition: filter 0.5s;
+}
+
+.negative {
+  filter: invert(1);
+  transition: filter 0.5s;
+}
+
+.form-page {
+  width: 48vw;
+  margin-left: 3px;
+  border-left: 6px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 90%;
+  min-height: 35%;
+  margin: 1rem auto;
+  line-height: 1.5rem;
+}
+
+.text-field {
+  padding: 3px;
+}
+
+form textarea {
+  min-height: 40%;
+  margin-bottom: 3px;
+}
+
+#submit {
+  padding: 5px;
+}
