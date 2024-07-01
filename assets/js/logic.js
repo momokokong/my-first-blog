@@ -3,6 +3,7 @@ const backEl = document.querySelector("#back");
 const switchEl = document.querySelector(".light-switch");
 const avatarImgEl = document.querySelector(".positive");
 const borderEl = document.querySelectorAll("header, main, .blog-page, .post-card, .avatar-page, .form-page, footer")
+
 let currentSwitch = "on";
 
 
