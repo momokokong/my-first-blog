@@ -1,7 +1,5 @@
 const blogPage = document.querySelector(".blog-page");
 const lightSwitch = (localStorage.getItem("light-switch") === "on" ? "light" : "dark");
-console.log(localStorage.getItem("light-switch"));
-
 
 let blogPosts = [];
 
