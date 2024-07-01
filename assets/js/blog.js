@@ -1,8 +1,21 @@
+// blog.js is the js to render the blog posts on blog.html.  
+// If no blog post is available, leave a default message on the page.
+
+// Global variables:
+// blogPage - ".blog-page" element where the blog posts are located
+// lightSwitch - represent the light/dark mode of the blog posts should be 
+// blogPost - default as an empty array and used to store any blog posts from localStorage
+
 const blogPage = document.querySelector(".blog-page");
 const lightSwitch = (localStorage.getItem("light-switch") === "on" ? "light" : "dark");
 
 let blogPosts = [];
 
+// Initialize blog posts
+// Function: init()
+// parameter: none
+// return: none
+// Load stored posts from localstorage, assign them to blogPosts if not null then render blogPosts.
 function init() {
   const storedPosts = JSON.parse(localStorage.getItem("blogPosts"));
   if (storedPosts !== null) {
@@ -11,6 +24,14 @@ function init() {
   renderPosts();
 }
 
+// Render blog posts
+// Function: renderPosts()
+// parameter: none
+// return: none
+// Clear whatever in .blogPage(main). Then for each post of blogPosts, create the 
+// post element.  
+// This should not happen following regular user flow: 
+// If no post is available, show a default message.
 function renderPosts() {
   blogPage.innerHTML = "";
   blogPosts.forEach( post => {
@@ -21,6 +42,12 @@ function renderPosts() {
   }
 }
 
+// Render blog posts
+// Function: renderPosts()
+// parameter: post (object from blogPosts)
+// return: sectionCard: html element ready to be appended to .blogPage
+// create the elements, assign the class attributes accordingly based on the value
+// and the light-switch dark/light state.  Then append to a sectionCard which would be returned.
 function createPost(post) {
   const sectionCard = document.createElement("section");
   const h2Title = document.createElement("h2");

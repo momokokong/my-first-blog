@@ -48,7 +48,7 @@ body {
 }
 
 /* Starting here is to style the header.  Also pre-define the light-switch 
-image by .moon and .sun. */
+image by .moon and .sun. which is used for dark/light mode */
 header {
   display: flex;
   flex-direction: row;
